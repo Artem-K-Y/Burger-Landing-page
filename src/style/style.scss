@@ -1,0 +1,17 @@
+@import url(fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+a{
+    text-decoration: none;
+}
+:root {
+    --MR: "Montesserat-Regular", sans-serif;
+    --MM: "Montserrat-Medium", sans-serif;
+    --MB: "Montserrat-Bold", sans-serif;
+    --PSR: "ProstoOne-Regular", sans-serif;
+}
