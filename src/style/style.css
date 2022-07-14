@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  background: #1C1C1C;
+}
+
 :root {
   --RB: "Roboto-Bold", sans-serif;
   --RM: "Roboto-Medium", sans-serif;
@@ -109,4 +113,103 @@ header {
   line-height: 21px;
   color: #FFFFFF;
   opacity: 0.7;
+}
+
+.food-list {
+  padding: 100px 0;
+  display: grid;
+  grid-template-rows: 323px;
+  grid-template-columns: repeat(4, 262px);
+  gap: 31px;
+}
+.food-list__cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #312F30;
+  border-radius: 10px;
+}
+.food-list__cart__title {
+  font-family: var(--RM);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin-top: 28px;
+}
+.food-list__cart__text {
+  font-family: var(--RR);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.7;
+  margin-top: 13px;
+}
+
+.grey {
+  width: 100%;
+  background: #312F30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.burger {
+  display: flex;
+  align-items: center;
+  gap: 158px;
+  padding: 22px 0;
+}
+.burger__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 371px;
+  width: 100%;
+}
+.burger__desc__title {
+  font-family: var(--RM);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44.2px;
+  line-height: 52px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.burger__desc__text {
+  font-family: var(--RR);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  margin-bottom: 13px;
+}
+.burger__desc__price {
+  font-family: var(--RM);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  color: #F6762C;
+  margin-bottom: 11px;
+}
+.burger__desc__price__old {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #F6762C;
+  opacity: 0.5;
+  margin-left: 6px;
 }/*# sourceMappingURL=style.css.map */
