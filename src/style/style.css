@@ -35,6 +35,11 @@ header {
   max-width: 1170px;
   width: 100%;
   display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  align-items: center;
 }
 
 .head {
@@ -212,4 +217,122 @@ header {
   color: #F6762C;
   opacity: 0.5;
   margin-left: 6px;
+}
+
+.product {
+  display: grid;
+  grid-template-rows: repeat(2, 300px);
+  grid-template-columns: repeat(2, 555px);
+  margin-top: 150px;
+  gap: 30px;
+}
+.product__cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product__cart__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 264px;
+  width: 100%;
+}
+.product__cart__desc__title {
+  font-family: var(--RM);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.product__cart__desc__text {
+  font-family: var(--RR);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  margin-bottom: 11px;
+}
+.product__cart__desc__price {
+  font-family: var(--RM);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: #F6762C;
+  margin-bottom: 11px;
+}
+.product__cart__desc__price__old {
+  font-family: var(--RM);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #F6762C;
+  opacity: 0.5;
+  margin-left: 10px;
+}
+.product .burking, .product .coffe {
+  align-items: flex-end;
+}
+.product .pizza, .product .papajohns {
+  padding-left: 50px;
+}
+.product .coffe {
+  background: url(../assets/img/coffe.svg) no-repeat center/cover;
+}
+.product .pizza {
+  background: url(../assets/img/pizza.svg) no-repeat center/cover;
+}
+.product .pizza .product__cart__desc {
+  max-width: 252px;
+}
+.product .burking {
+  background: url(../assets/img/burgerking.svg) no-repeat center/cover;
+}
+.product .papajohns {
+  background: url(../assets/img/papajohns.svg) no-repeat center/cover;
+}
+
+.feedback {
+  display: flex;
+  gap: 118px;
+}
+.feedback__user__commit {
+  max-width: 368px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feedback__user__commit .product__cart__desc__text {
+  text-align: center;
+  margin-bottom: 27px;
+}
+.feedback__user__commit__img {
+  margin-bottom: 37px;
+}
+.feedback__user__commit__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--RM);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.feedback__user__commit__title__subtitle {
+  font-size: 12px;
+  line-height: 14px;
+  opacity: 0.7;
 }/*# sourceMappingURL=style.css.map */
