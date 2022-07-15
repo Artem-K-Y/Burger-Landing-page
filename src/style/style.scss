@@ -35,12 +35,17 @@ header{
 }
 .menu{
     align-items: center;
+    margin-bottom: 200px;
 }
 .head{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 25px;
+    &__me img{
+        width: 66px;
+    }
     &__menu{
         display: flex;
         list-style: none;
@@ -306,14 +311,12 @@ header{
         &__circle1{
             width: 346px;
             height: 346px;
-            border: 1px solid #F6762C;
             border-radius: 100%;
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             border: 1px dashed rgba(246, 118, 44, 0.3);
-            padding: 58px;
             &__img{
                 position: absolute;
                 opacity: 1;
@@ -329,7 +332,7 @@ header{
             }
             & .three{
                 left: 50px;
-                bottom: -13px;
+                bottom: -7px;
             }
             & .four{
                 right: 9px;
@@ -378,4 +381,57 @@ header{
             }
         }
     }
+}
+.download{
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 60px 0;
+    & h2{
+        font-family: var(--RM);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        color: #FFFFFF;
+
+    }
+}
+.footer{
+    flex-direction: row;
+    justify-content: center;
+    gap: 158px;
+}
+.footer__menu{
+    padding: 130px 0;
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        & li{
+            gap: 15px;
+        }
+    }
+    &__logo{
+        gap: 13px;
+        margin-top: 20px;
+        & li{
+            color: #F6762C;
+            display: flex;
+            gap: 7px;
+        }
+        
+    }
+    
+    & li a{
+        font-family: var(--RR);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+        opacity: 0.8;
+    }
+   
+    
 }
