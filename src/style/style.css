@@ -305,22 +305,75 @@ header {
 .feedback {
   display: flex;
   gap: 118px;
+  max-width: 851px;
+  width: 100%;
+  margin-top: 146px;
 }
-.feedback__user__commit {
+.feedback__user {
+  width: 365px;
+  height: 361px;
+  display: flex;
+  align-items: center;
+}
+.feedback__user__circle1 {
+  width: 346px;
+  height: 346px;
+  border: 1px solid #F6762C;
+  border-radius: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed rgba(246, 118, 44, 0.3);
+  padding: 58px;
+}
+.feedback__user__circle1__img {
+  position: absolute;
+  opacity: 1;
+  z-index: 2;
+}
+.feedback__user__circle1 .one {
+  left: -21px;
+  top: 43px;
+}
+.feedback__user__circle1 .two {
+  right: 21px;
+  top: 10px;
+}
+.feedback__user__circle1 .three {
+  left: 50px;
+  bottom: -13px;
+}
+.feedback__user__circle1 .four {
+  right: 9px;
+  bottom: 41px;
+}
+.feedback__user__circle1__circle2 {
+  width: 230px;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 1px dashed rgba(246, 118, 44, 0.3);
+}
+.feedback__commit {
   max-width: 368px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.feedback__user__commit .product__cart__desc__text {
+.feedback__commit .product__cart__desc__text {
   text-align: center;
   margin-bottom: 27px;
 }
-.feedback__user__commit__img {
+.feedback__commit__quote {
+  width: 47px;
+  height: 46px;
   margin-bottom: 37px;
 }
-.feedback__user__commit__title {
+.feedback__commit__title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -331,7 +384,7 @@ header {
   line-height: 28px;
   color: #FFFFFF;
 }
-.feedback__user__commit__title__subtitle {
+.feedback__commit__title__subtitle {
   font-size: 12px;
   line-height: 14px;
   opacity: 0.7;

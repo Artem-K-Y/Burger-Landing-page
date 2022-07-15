@@ -295,8 +295,58 @@ header{
 .feedback{
     display: flex;
     gap: 118px;
-   
-    &__user__commit{
+    max-width: 851px;
+    width: 100%;
+    margin-top: 146px;
+    &__user{
+        width: 365px;
+        height: 361px;
+        display: flex;
+        align-items: center;
+        &__circle1{
+            width: 346px;
+            height: 346px;
+            border: 1px solid #F6762C;
+            border-radius: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px dashed rgba(246, 118, 44, 0.3);
+            padding: 58px;
+            &__img{
+                position: absolute;
+                opacity: 1;
+                z-index: 2;
+            }
+            & .one{
+                left: -21px;
+                top: 43px;
+            }
+            & .two{
+                right: 21px;
+                top: 10px;
+            }
+            & .three{
+                left: 50px;
+                bottom: -13px;
+            }
+            & .four{
+                right: 9px;
+                bottom: 41px;
+            }
+            &__circle2{
+                width: 230px;
+                height: 230px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                border: 1px dashed rgba(246, 118, 44, 0.3);
+            }
+        }
+    }
+    &__commit{
         max-width: 368px;
         width: 100%;
         display: flex;
@@ -306,7 +356,9 @@ header{
             text-align: center;
             margin-bottom: 27px;
         }
-        &__img{
+        &__quote{
+            width: 47px;
+            height: 46px;
             margin-bottom: 37px;
         }
         &__title{
