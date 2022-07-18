@@ -545,4 +545,10 @@ header {
     width: 230px;
     height: 230px;
   }
+  .product__cart__desc {
+    align-items: center;
+  }
+  .product__cart__desc__text {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
