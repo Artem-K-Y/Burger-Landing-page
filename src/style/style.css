@@ -32,10 +32,11 @@ header {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 0 30px;
 }
 
 .menu {
@@ -166,6 +167,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 30px;
 }
 
 .burger {
@@ -411,14 +413,14 @@ header {
 .footer {
   flex-direction: row;
   justify-content: center;
-  gap: 158px;
+  gap: 50px 158px;
+  flex-wrap: wrap;
+  padding: 130px 0;
 }
 
 .footer__menu {
-  padding: 130px 0;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
 }
 .footer__menu img {
   width: 74px;
@@ -456,4 +458,25 @@ header {
   line-height: 14px;
   color: #FFFFFF;
   opacity: 0.8;
+}
+
+.social ul {
+  flex-direction: row !important;
+}
+.social ul img {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+@media (max-width: 1200px) {
+  .food-list {
+    grid-template-rows: repeat(2, 323px);
+    grid-template-columns: repeat(3, 262px);
+  }
+}
+@media (max-width: 1170px) {
+  .product {
+    grid-template-rows: repeat(4, 300px);
+    grid-template-columns: repeat(1, 555px);
+  }
 }/*# sourceMappingURL=style.css.map */

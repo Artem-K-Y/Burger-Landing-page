@@ -22,16 +22,19 @@ header, main, footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 header{
     height: 886.17px;
     background:url(../assets/img/Mask-Group.svg) no-repeat center/cover ;
 }
 .container{
-    max-width: 1170px;
+    max-width: 1200px;
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding: 0 30px;
+    
 }
 .menu{
     align-items: center;
@@ -157,6 +160,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 30px;
 }
 .burger{
     display: flex;
@@ -400,13 +404,13 @@ header{
 .footer{
     flex-direction: row;
     justify-content: center;
-    gap: 158px;
+    gap: 50px 158px;
+    flex-wrap: wrap;
+    padding: 130px 0;
 }
 .footer__menu{
-    padding: 130px 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     & img {
         width: 74px;
         height: 59px;
@@ -414,13 +418,11 @@ header{
     &__logo{
         gap: 13px !important ;
         margin-top: 20px !important;
-       
         & li{
             color: #F6762C;
             display: flex;
             gap: 7px;
         }
-        
     }
     & ul{
         list-style: none;
@@ -437,7 +439,6 @@ header{
         line-height: 19px;
         color: #FFFFFF;
     }
-    
     & li a{
         font-family: var(--RR);
         font-style: normal;
@@ -447,6 +448,25 @@ header{
         color: #FFFFFF;
         opacity: 0.8;
     }
-   
+}
+.social ul {
+    flex-direction: row !important;
+    & img{
+        width: 15px !important;
+        height: 15px !important;
+    }
+}
+@media (max-width: 1200px){
+    .food-list{
+        grid-template-rows: repeat(2, 323px);
+        grid-template-columns: repeat(3, 262px);
+    }
+}
+@media (max-width: 1170px){
+    .product{
+        grid-template-rows: repeat(4, 300px);
+        grid-template-columns: repeat(1, 555px);
+    }
     
 }
+
