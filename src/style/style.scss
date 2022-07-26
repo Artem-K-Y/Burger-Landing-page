@@ -4,74 +4,180 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
-a{
+
+a {
     text-decoration: none;
 }
-body{
+
+body {
     background: #1C1C1C;
 }
+
 :root {
     --RB: "Roboto-Bold", sans-serif;
     --RM: "Roboto-Medium", sans-serif;
     --RR: "Roboto-Regular", sans-serif;
 }
-header, main, footer{
+
+header,
+main,
+footer {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
-header{
+
+header {
     height: 886.17px;
-    background:url(../assets/img/Mask-Group.svg) no-repeat center/cover ;
+    background: url(../assets/img/Mask-Group.svg) no-repeat center/cover;
 }
-.container{
+
+.box {
     max-width: 1200px;
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 0 30px;
-    
+
 }
-.menu{
+
+.menu {
     align-items: center;
     margin-bottom: 200px;
 }
-.head{
+/*menu-burger
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #616161;
+
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+
+  width: 300px;
+  height: 100%;
+
+  margin: 0;
+  padding: 80px 0;
+
+  list-style: none;
+
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
+  transition-duration: .25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+
+  color: #333;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+*/
+.head {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 25px;
-    &__me img{
+
+    &__me img {
         width: 66px;
     }
-    &__menu{
+
+    &__menu {
         display: flex;
         list-style: none;
         gap: 28px;
-        & a{
+
+        & a {
             font-family: var(--RR);
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
             line-height: 16px;
-            opacity: 0.7;
-            color: #FFFFFF;
-            &:hover{
+            color: #ffffffaf;
+            transition: 0.3s;
+
+            &:hover {
                 font-family: var(--RB);
-                font-weight: 700;
-                font-size: 15px;
-                line-height: 18px;
                 color: #FFFFFF;
                 opacity: 1;
             }
         }
     }
-    &__button{
+
+    &__button {
         padding: 15px 37px;
         background: #F6762C;
         border-radius: 5px;
@@ -83,7 +189,8 @@ header{
         color: #FFFFFF;
     }
 }
-.head-banner{
+
+.head-banner {
     display: flex;
     max-width: 555px;
     height: 780px;
@@ -91,7 +198,8 @@ header{
     align-items: flex-start;
     justify-content: center;
     gap: 40px;
-    &__subtitle{
+
+    &__subtitle {
         font-family: var(--RM);
         font-style: normal;
         font-weight: 500;
@@ -100,7 +208,8 @@ header{
         letter-spacing: 0.1em;
         color: #FFFFFF;
     }
-    &__title{
+
+    &__title {
         display: flex;
         flex-direction: column;
         font-family: var(--RM);
@@ -110,7 +219,8 @@ header{
         line-height: 67px;
         color: #FFFFFF;
     }
-    &__desc{
+
+    &__desc {
         font-family: var(--RR);
         font-style: normal;
         font-weight: 400;
@@ -120,20 +230,23 @@ header{
         opacity: 0.7;
     }
 }
-.food-list{
+
+.food-list {
     padding: 100px 0;
     display: grid;
     grid-template-rows: 323px;
     grid-template-columns: repeat(4, 262px);
     gap: 31px;
-    &__cart{
+
+    &__cart {
         display: flex;
         flex-direction: column;
         align-items: center;
         background: #312F30;
         border-radius: 10px;
-        &__title{
-            font-family:var(--RM);
+
+        &__title {
+            font-family: var(--RM);
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
@@ -141,7 +254,8 @@ header{
             color: #FFFFFF;
             margin-top: 28px;
         }
-        &__text{
+
+        &__text {
             font-family: var(--RR);
             font-style: normal;
             font-weight: 400;
@@ -154,7 +268,8 @@ header{
         }
     }
 }
-.grey{
+
+.grey {
     width: 100%;
     background: #312F30;
     display: flex;
@@ -162,18 +277,20 @@ header{
     align-items: center;
     padding: 0 30px;
 }
-.burger{
+
+.burger {
     display: flex;
     align-items: center;
-    gap: 158px;
-    padding: 22px 0;
-    &__desc{
+    gap: 13.6%;
+
+    &__desc {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         max-width: 371px;
         width: 100%;
-        &__title{
+
+        &__title {
             font-family: var(--RM);
             font-style: normal;
             font-weight: 500;
@@ -182,7 +299,8 @@ header{
             color: #FFFFFF;
             margin-bottom: 24px;
         }
-        &__text{
+
+        &__text {
             font-family: var(--RR);
             font-style: normal;
             font-weight: 400;
@@ -192,7 +310,8 @@ header{
             opacity: 0.7;
             margin-bottom: 13px;
         }
-        &__price{
+
+        &__price {
             font-family: var(--RM);
             font-style: normal;
             font-weight: 500;
@@ -201,7 +320,8 @@ header{
             letter-spacing: 0.1em;
             color: #F6762C;
             margin-bottom: 11px;
-            &__old{
+
+            &__old {
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 500;
@@ -216,23 +336,27 @@ header{
         }
     }
 }
-.product{
+
+.product {
     display: grid;
     grid-template-rows: repeat(2, 300px);
     grid-template-columns: repeat(2, 555px);
     margin-top: 150px;
     gap: 30px;
-    &__cart{
+
+    &__cart {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        &__desc{
+
+        &__desc {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             max-width: 264px;
             width: 100%;
-            &__title{
+
+            &__title {
                 font-family: var(--RM);
                 font-style: normal;
                 font-weight: 500;
@@ -241,8 +365,9 @@ header{
                 color: #FFFFFF;
                 margin-bottom: 20px;
             }
-            &__text{
-                font-family:var(--RR);
+
+            &__text {
+                font-family: var(--RR);
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
@@ -251,7 +376,8 @@ header{
                 opacity: 0.7;
                 margin-bottom: 11px;
             }
-            &__price{
+
+            &__price {
                 font-family: var(--RM);
                 font-style: normal;
                 font-weight: 500;
@@ -260,7 +386,8 @@ header{
                 letter-spacing: 0.1em;
                 color: #F6762C;
                 margin-bottom: 11px;
-                &__old{
+
+                &__old {
                     font-family: var(--RM);
                     font-style: normal;
                     font-weight: 500;
@@ -273,47 +400,59 @@ header{
                     margin-left: 10px;
                 }
             }
-            
+
         }
     }
-    & .burking, .coffe{
+
+    & .burking,
+    .coffe {
         align-items: flex-end;
     }
-    & .pizza, .papajohns{
+
+    & .pizza,
+    .papajohns {
         padding-left: 50px;
     }
-    & .coffe{
+
+    & .coffe {
         background: url(../assets/img/coffe.svg) no-repeat center/cover;
     }
-    & .pizza{
-        
+
+    & .pizza {
+
         background: url(../assets/img/pizza.svg) no-repeat center/cover;
-        & .product__cart__desc{
+
+        & .product__cart__desc {
             max-width: 252px;
         }
     }
-    & .burking{
+
+    & .burking {
         background: url(../assets/img/burgerking.svg) no-repeat center/cover;
     }
-    & .papajohns{
+
+    & .papajohns {
         background: url(../assets/img/papajohns.svg) no-repeat center/cover;
     }
-    
-    
+
+
 }
-.feedback{
+
+.feedback {
     display: flex;
     gap: 118px;
     max-width: 851px;
     width: 100%;
     margin-top: 146px;
-    &__user{
+
+    &__user {
         max-width: 365px;
         width: 100%;
         height: 361px;
         display: flex;
         align-items: center;
-        &__circle1{
+
+        &__circle1 {
             max-width: 346px;
             width: 100%;
             height: 346px;
@@ -323,28 +462,34 @@ header{
             justify-content: center;
             align-items: center;
             border: 1px dashed rgba(246, 118, 44, 0.3);
-            &__img{
+
+            &__img {
                 position: absolute;
                 opacity: 1;
                 z-index: 2;
             }
-            & .one{
+
+            & .one {
                 left: -21px;
                 top: 43px;
             }
-            & .two{
+
+            & .two {
                 right: 21px;
                 top: 10px;
             }
-            & .three{
+
+            & .three {
                 left: 50px;
                 bottom: -7px;
             }
-            & .four{
+
+            & .four {
                 right: 9px;
                 bottom: 41px;
             }
-            &__circle2{
+
+            &__circle2 {
                 max-width: 230px;
                 width: 100%;
                 height: 230px;
@@ -356,22 +501,26 @@ header{
             }
         }
     }
-    &__commit{
+
+    &__commit {
         max-width: 368px;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        & .product__cart__desc__text{
+
+        & .product__cart__desc__text {
             text-align: center;
             margin-bottom: 27px;
         }
-        &__quote{
+
+        &__quote {
             width: 47px;
             height: 46px;
             margin-bottom: 37px;
         }
-        &__title{
+
+        &__title {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -381,7 +530,8 @@ header{
             font-size: 24px;
             line-height: 28px;
             color: #FFFFFF;
-            &__subtitle{
+
+            &__subtitle {
                 font-size: 12px;
                 line-height: 14px;
                 opacity: 0.7;
@@ -389,12 +539,14 @@ header{
         }
     }
 }
-.download{
+
+.download {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     padding: 60px 0;
-    & h2{
+
+    & h2 {
         font-family: var(--RM);
         font-style: normal;
         font-weight: 500;
@@ -404,37 +556,44 @@ header{
 
     }
 }
-.footer{
+
+.footer {
     flex-direction: row;
     justify-content: center;
     gap: 50px 158px;
     flex-wrap: wrap;
     padding: 130px 0;
 }
-.footer__menu{
+
+.footer__menu {
     display: flex;
     flex-direction: column;
+
     & img {
         width: 74px;
         height: 59px;
     }
-    &__logo{
-        gap: 13px !important ;
+
+    &__logo {
+        gap: 13px !important;
         margin-top: 20px !important;
-        & li{
+
+        & li {
             color: #F6762C;
             display: flex;
             gap: 7px;
         }
     }
-    & ul{
+
+    & ul {
         list-style: none;
         display: flex;
         flex-direction: column;
         gap: 15px;
         margin-top: 15px;
     }
-    & h3{
+
+    & h3 {
         font-family: var(--RM);
         font-style: normal;
         font-weight: 500;
@@ -442,7 +601,8 @@ header{
         line-height: 19px;
         color: #FFFFFF;
     }
-    & li a{
+
+    & li a {
         font-family: var(--RR);
         font-style: normal;
         font-weight: 400;
@@ -452,93 +612,120 @@ header{
         opacity: 0.8;
     }
 }
+
 .social ul {
-    flex-direction: row ;
-    & img{
+    flex-direction: row;
+
+    & img {
         width: 16px;
         height: 16px;
     }
 }
-@media (max-width: 1200px){
-    .food-list{
+
+@media (max-width: 1200px) {
+    .food-list {
         grid-template-rows: repeat(2, 323px);
         grid-template-columns: repeat(3, 262px);
     }
-    .container{
+
+    .container {
         align-items: center;
     }
 }
-@media (max-width: 1170px){
-    .product{
+
+@media (max-width: 1170px) {
+    .product {
         grid-template-rows: repeat(4, 300px);
         grid-template-columns: repeat(1, minmax(100px, 555px));
     }
-    
+
 }
-@media (max-width: 1060px){
-    .burger{
+
+@media (max-width: 1060px) {
+    .burger {
         flex-direction: column;
         padding: 50px 0;
     }
 }
-@media (max-width: 910px){
 
-    .food-list{
+@media (max-width: 910px) {
+
+    .food-list {
         grid-template-columns: repeat(2, 262px);
     }
 }
-@media (max-width: 770px){
-    .feedback{
+
+@media (max-width: 770px) {
+    .feedback {
         flex-direction: column;
         align-items: center;
-    } 
+    }
 }
-@media (max-width: 680px){
-    .head{
+
+@media (max-width: 680px) {
+    .head {
         flex-direction: column;
         gap: 30px;
     }
 }
-@media (max-width: 625px){
-    .download{
-        flex-direction:column;
+
+@media (max-width: 625px) {
+    .download {
+        flex-direction: column;
         gap: 50px;
     }
-    .food-list{
+
+    .food-list {
         grid-template-columns: 262px;
         grid-template-rows: repeat(4, 323px);
     }
 }
-@media (max-width: 550px){
-    .burger img{
+
+@media (max-width: 550px) {
+    .burger img {
         width: 100%;
     }
+
+    .head-banner__title {
+        font-size: 50px;
+    }
 }
-@media (max-width: 442px){
-    .head__menu{
+
+@media (max-width: 442px) {
+    .head__menu {
         flex-direction: column;
         align-items: center;
     }
-    header{
+
+    header {
         height: auto;
     }
+
+    .head-banner__title {
+        font-size: 45px;
+    }
 }
-@media (max-width: 382px){
-    .feedback__user{   
+
+@media (max-width: 382px) {
+    .feedback__user {
         flex-direction: column;
-        &__circle1{
+
+        &__circle1 {
             width: 260px;
             height: 260px;
-                &__circle2{
-                width:230px ;
+
+            &__circle2 {
+                width: 230px;
                 height: 230px;
             }
         }
     }
-    .product__cart__desc{ 
+
+    .product__cart__desc {
         align-items: center;
-    }    
-    .product__cart__desc__text{
-    text-align: center;
+    }
+
+    .product__cart__desc__text {
+        text-align: center;
     }
 }
