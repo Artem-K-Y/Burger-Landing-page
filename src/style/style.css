@@ -38,7 +38,7 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
+  padding: 0 15px;
 }
 
 .menu {
@@ -46,103 +46,8 @@ header {
   margin-bottom: 200px;
 }
 
-/*menu-burger
-#menu__toggle {
-  opacity: 0;
-}
-
-#menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
-}
-#menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-#menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-  left: 0;
-}
-
-.menu__btn {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-
-  width: 26px;
-  height: 26px;
-
-  cursor: pointer;
-  z-index: 1;
-}
-
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-
-  width: 100%;
-  height: 2px;
-
-  background-color: #616161;
-
-  transition-duration: .25s;
-}
-.menu__btn > span::before {
-  content: '';
-  top: -8px;
-}
-.menu__btn > span::after {
-  content: '';
-  top: 8px;
-}
-.menu__box {
-  display: block;
-  position: fixed;
-  visibility: hidden;
-  top: 0;
-  left: -100%;
-
-  width: 300px;
-  height: 100%;
-
-  margin: 0;
-  padding: 80px 0;
-
-  list-style: none;
-
-  background-color: #ECEFF1;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-
-  transition-duration: .25s;
-}
-
-.menu__item {
-  display: block;
-  padding: 12px 24px;
-
-  color: #333;
-
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-
-  text-decoration: none;
-
-  transition-duration: .25s;
-}
-.menu__item:hover {
-  background-color: #CFD8DC;
-}
-*/
+/*menu-burger*/
 .head {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,13 +67,13 @@ header {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: rgba(255, 255, 255, 0.6862745098);
+  color: rgba(255, 255, 255, 0.5333333333);
   transition: 0.3s;
+  transform: scale(0.5);
 }
 .head__menu a:hover {
-  font-family: var(--RB);
   color: #FFFFFF;
-  opacity: 1;
+  transform: scale(1.5);
 }
 .head__button {
   padding: 15px 37px;
@@ -226,6 +131,7 @@ header {
   grid-template-rows: 323px;
   grid-template-columns: repeat(4, 262px);
   gap: 31px;
+  justify-content: center;
 }
 .food-list__cart {
   display: flex;
@@ -513,7 +419,7 @@ header {
   justify-content: center;
   gap: 50px 158px;
   flex-wrap: wrap;
-  padding: 130px 0;
+  padding: 130px 15px;
 }
 
 .footer__menu {
