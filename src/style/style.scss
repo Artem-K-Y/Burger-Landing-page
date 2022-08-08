@@ -6,7 +6,12 @@
     box-sizing: border-box;
 
 }
+.menu1{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
 
+}
 a {
     text-decoration: none;
 }
@@ -612,7 +617,26 @@ header {
         font-size: 45px;
     }
 }
-
+@media (max-width: 425px){
+    .head__menu{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        backdrop-filter: blur(15px);
+        padding: 30px;
+        transform: translateX(100%);
+        transition: 0.5s linear;
+    }
+    .head{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .menu1:focus+.head__menu{
+        transform: translateX(0);
+    }
+}
 @media (max-width: 382px) {
     .feedback__user {
         flex-direction: column;
